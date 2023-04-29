@@ -8,7 +8,6 @@ const getWordle = () => {
   fetch("https://tortle.up.railway.app/word")
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
       wordle = json.toUpperCase();
     })
     .catch((err) => console.log(err));
@@ -126,12 +125,10 @@ const checkRow = () => {
     fetch(`https://tortle.up.railway.app/check/?word=${guess}`)
       .then((response) => response.json())
       .then((json) => {
-        console.log(json);
         if (json == "Entry word not found") {
           showMessage("Word not in list!");
           return;
         } else {
-          console.log("Guess is " + guess, "wordle is " + wordle);
           flipTile();
           if (wordle == guess) {
             showMessage("Magnificent!");
