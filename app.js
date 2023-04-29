@@ -123,37 +123,36 @@ const deleteLetter = () => {
 const checkRow = () => {
   const guess = guessRows[currentRow].join("");
   if (currentTile > 4) {
-    // fetch(`http://localhost:8000/check/?word=${guess}`)
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     console.log(json);
-    //     if (json == "Entry word not found") {
-    //       showMessage("Word not in list!");
-    //       return;
-    //     } else {
-    //       console.log("Guess is " + guess, "wordle is " + wordle);
-    flipTile();
-    if (wordle == guess) {
-      // showMessage("Magnificent!");
-      isGameOver = true;
-      return;
-    } else {
-      if (currentRow >= 5) {
-        isGameOver = true;
-        // showMessage("Game Over");
-        return;
-      }
-      if (currentRow < 5) {
-        currentRow++;
-        currentTile = 0;
-      }
-    }
+    fetch(`https://tortle.up.railway.app/check/?word=${guess}`)
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+        if (json == "Entry word not found") {
+          showMessage("Word not in list!");
+          return;
+        } else {
+          console.log("Guess is " + guess, "wordle is " + wordle);
+          flipTile();
+          if (wordle == guess) {
+            // showMessage("Magnificent!");
+            isGameOver = true;
+            return;
+          } else {
+            if (currentRow >= 5) {
+              isGameOver = true;
+              // showMessage("Game Over");
+              return;
+            }
+            if (currentRow < 5) {
+              currentRow++;
+              currentTile = 0;
+            }
+          }
+        }
+      })
+      .catch((err) => console.log(err));
   }
 };
-//       )
-//       .catch((err) => console.log(err));
-//   }
-// };
 
 // const showMessage = (message) => {
 //   const messageElement = document.createElement("p");
