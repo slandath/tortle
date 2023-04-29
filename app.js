@@ -5,8 +5,8 @@ const messageDisplay = document.querySelector(".message-container");
 let wordle;
 
 const getWordle = () => {
-  fetch("http://localhost:8000/word")
-    // fetch("https://tortle.up.railway.app/word")
+  // fetch("http://localhost:8000/word")
+  fetch("https://tortle.up.railway.app/word")
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
