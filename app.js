@@ -43,7 +43,7 @@ const keys = [
   "B",
   "N",
   "M",
-  "<<",
+  "<<<",
 ];
 
 const guessRows = [
@@ -134,13 +134,13 @@ const checkRow = () => {
     //       console.log("Guess is " + guess, "wordle is " + wordle);
     flipTile();
     if (wordle == guess) {
-      showMessage("Magnificent!");
+      // showMessage("Magnificent!");
       isGameOver = true;
       return;
     } else {
       if (currentRow >= 5) {
         isGameOver = true;
-        showMessage("Game Over");
+        // showMessage("Game Over");
         return;
       }
       if (currentRow < 5) {
@@ -155,12 +155,12 @@ const checkRow = () => {
 //   }
 // };
 
-const showMessage = (message) => {
-  const messageElement = document.createElement("p");
-  messageElement.textContent = message;
-  messageDisplay.append(messageElement);
-  setTimeout(() => messageDisplay.removeChild(messageElement), 2000);
-};
+// const showMessage = (message) => {
+//   const messageElement = document.createElement("p");
+//   messageElement.textContent = message;
+//   messageDisplay.append(messageElement);
+//   setTimeout(() => messageDisplay.removeChild(messageElement), 2000);
+// };
 
 const addColorToKey = (keyLetter, color) => {
   const key = document.getElementById(keyLetter);
