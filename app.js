@@ -5,11 +5,11 @@ const messageDisplay = document.querySelector(".message-container");
 let wordle;
 
 const getWordle = () => {
-  fetch("https://tortle.up.railway.app/word")
+  fetch(
+    "https://random-word-api.vercel.app/api?words=1&length=5&type=uppercase"
+  )
     .then((response) => response.json())
-    .then((json) => {
-      wordle = json.toUpperCase();
-    })
+    .then((data) => (wordle = data[0]))
     .catch((err) => console.log(err));
 };
 getWordle();
