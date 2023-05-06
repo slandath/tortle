@@ -95,16 +95,16 @@ body {
 
 .title-container {
     text-align: center;
-    width: 25rem;
+    width: 18rem;
     border-bottom: solid 1px #3a3a3c;
 }
 
 .tile-container {
-    width: 25em;
+  width: auto;
 }
 
 .key-container {
-    width: 23rem;
+    width: 17.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -114,8 +114,8 @@ body {
 }
 
 .key-container button {
-  width: 2rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 2.7rem;
   margin: .1rem;
   background-color: #EEEEEE;
   border: 1px solid rgb(209,213,219);
@@ -134,8 +134,8 @@ body {
 }
 
 .key-container button:nth-child(20), .key-container button:nth-child(28) {
-  width: 3.5rem;
-  font-size: .8rem;
+  width: 2.5rem;
+  font-size: .5rem;
 }
 
 .key-container button:nth-child(11) {
@@ -148,8 +148,8 @@ body {
 }
 
 .tile-container .tile {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 3rem;
+  height: 3rem;
   border: 2px solid#3a3a3c;
   box-sizing: border-box;
   display: flex;
