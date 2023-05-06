@@ -84,7 +84,7 @@ body {
 
 .game-container {
     height: auto;
-    width: auto;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,16 +95,16 @@ body {
 
 .title-container {
     text-align: center;
-    width: 18rem;
+    width: auto;
     border-bottom: solid 1px #3a3a3c;
 }
 
 .tile-container {
-  width: auto;
+  width: 90%;
 }
 
 .key-container {
-    width: 17.5rem;
+    width: 23rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -114,8 +114,8 @@ body {
 }
 
 .key-container button {
-  width: 1.5rem;
-  height: 2.7rem;
+  width: 2rem;
+  height: 3rem;
   margin: .1rem;
   background-color: #EEEEEE;
   border: 1px solid rgb(209,213,219);
@@ -134,8 +134,8 @@ body {
 }
 
 .key-container button:nth-child(20), .key-container button:nth-child(28) {
-  width: 2.5rem;
-  font-size: .5rem;
+  width: 3.25rem;
+  font-size: .65rem;
 }
 
 .key-container button:nth-child(11) {
@@ -148,8 +148,8 @@ body {
 }
 
 .tile-container .tile {
-  width: 3rem;
-  height: 3rem;
+  width: 3.25rem;
+  height: 3.25rem;
   border: 2px solid#3a3a3c;
   box-sizing: border-box;
   display: flex;
