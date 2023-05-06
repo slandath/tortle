@@ -42,7 +42,7 @@ const keys = [
   "B",
   "N",
   "M",
-  "<<",
+  "DEL",
 ];
 
 const guessRows = [
@@ -83,7 +83,7 @@ keys.forEach((key) => {
 
 const handleClick = (letter) => {
   if (!isGameOver) {
-    if (letter === "<<") {
+    if (letter === "DEL") {
       deleteLetter();
       return;
     }
@@ -155,7 +155,7 @@ const showMessage = (message) => {
   const messageElement = document.createElement("p");
   messageElement.textContent = message;
   messageDisplay.append(messageElement);
-  setTimeout(() => messageDisplay.removeChild(messageElement), 3000);
+  setTimeout(() => messageDisplay.removeChild(messageElement), 5000);
 };
 
 const addColorToKey = (keyLetter, color) => {

@@ -79,12 +79,12 @@ select {
 }
 
 body {
-    background-color: #cccccc;
+    background-color: #E3F6FF;
 }
 
 .game-container {
-    height: 40.625rem;
-    width: 25rem;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,8 +100,7 @@ body {
 }
 
 .tile-container {
-    width: 21rem;
-    margin-bottom: 1.5rem;
+    width: 25em;
 }
 
 .key-container {
@@ -111,13 +110,14 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .key-container button {
   width: 2rem;
   height: 3rem;
   margin: .1rem;
-  background-color: #FFFFFF;
+  background-color: #EEEEEE;
   border: 1px solid rgb(209,213,219);
   border-radius: .5rem;
   font-size: .875rem;
@@ -133,24 +133,9 @@ body {
   touch-action: manipulation;
 }
 
-.key-container button:hover {
-  background-color: #add8e6;
-}
-
-.key-container button:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.key-container button:focus-visible {
-  box-shadow: none;
-}
-
-
 .key-container button:nth-child(20), .key-container button:nth-child(28) {
-  width: 3.25rem;
-  font-size: 14px;
-  padding: .25rem;
+  width: 3.5rem;
+  font-size: .8rem;
 }
 
 .key-container button:nth-child(11) {
@@ -175,11 +160,15 @@ body {
 }
 
 .message-container {
-  height: 1.5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin: .5rem .5rem;
 }
 
 .message-container p {
-  background-color: #A7C7E7;
+  background-color: #8DCBE6;
   border-radius: 10px;
   padding: .625rem;
   margin: 0;
@@ -208,16 +197,16 @@ body {
 }
 
 .gray-overlay {
-  background-color: #3a3a3c !important;
+  background-color: #4d4d50 !important;
   border: none !important;
 }
 
 .yellow-overlay {
-  background-color: #f5d6ab !important;
+  background-color: #FFEA20 !important;
   border: none !important;
 }
 
 .green-overlay {
-  background-color: #abf5c6 !important;
+  background-color: #9DF1DF !important;
   border: none !important;
 }
