@@ -7,7 +7,7 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 100vh;
   margin: 0;
   padding: 1em;
   font-size: clamp(.5rem, 2.5vmin, 1.5rem);
@@ -23,8 +23,8 @@ body {
 
 .keyboard {
   display: grid;
-  grid-template-columns: repeat(20,minmax(auto, 2em));
-  grid-auto-rows: 4em;
+  grid-template-columns: repeat(20,minmax(auto, 1.5em));
+  grid-auto-rows: 3em;
   gap: .25em;
   justify-content: center;
 }
@@ -86,8 +86,8 @@ body {
   justify-content: center;
   align-content: center;
   flex-grow: 1;
-  grid-template-columns: repeat(5, 5em);
-  grid-template-rows: repeat(6, 5em);
+  grid-template-columns: repeat(5, 4em);
+  grid-template-rows: repeat(6, 4em);
   gap: .25em;
   margin-bottom: 1em;
 }
