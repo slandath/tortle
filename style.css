@@ -4,17 +4,13 @@
 }
 
 body {
-  background-color: hsl(240,3%,7%);
+  background-color: black;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
   margin: 0;
   padding: 1em;
   font-size: clamp(.5rem, 2.5vmin, 1.5rem);
-}
-
-.title-container {
-  border-bottom: .05em solid white;
 }
 
 .title-container h1 {
@@ -27,8 +23,8 @@ body {
 
 .keyboard {
   display: grid;
-  grid-template-columns: repeat(20,minmax(auto, 1.25em));
-  grid-auto-rows: 3em;
+  grid-template-columns: repeat(20,minmax(1.5em, 2em));
+  grid-auto-rows: 5em;
   gap: .25em;
   justify-content: center;
 }
@@ -72,15 +68,17 @@ body {
 }
 
 .key.wrong-location {
-  --hue: 49;
-  --saturation: 51%;
-  --lightness: 47%;
+  --hue: 60;
+  --saturation: 94%;
+  --lightness: 87%;
+  color: hsl(240, 2%, 32%);
 }
 
 .key.correct {
-  --hue: 115;
-  --saturation: 29%;
-  --lightness: 43%;
+  --hue: 133;
+  --saturation: 100%;
+  --lightness: 89%;
+  color:hsl(240, 2%, 32%);
 }
 
 .guess-grid {
@@ -116,11 +114,13 @@ body {
 }
 .tile[data-state="wrong-location"] {
   border: none;
-  background-color: hsl(49, 51%, 47%)
+  background-color: hsl(60, 94%, 87%);
+  color: hsl(240, 2%, 32%);
 }
 .tile[data-state="correct"] {
   border: none;
-  background-color: hsl(115, 29%, 43%);
+  background-color: hsl(133, 100%, 89%);
+  color:hsl(240, 2%, 32%)
 }
 
 .tile.shake {
@@ -190,7 +190,8 @@ body {
 
 .alert {
   pointer-events: none;
-  background-color: hsl(204, 7%, 85%);
+  background-color: hsl(242, 100%, 84%);
+  color: black;
   padding: .75em;
   border-radius: .25em;
   opacity: 1;
