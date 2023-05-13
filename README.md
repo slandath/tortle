@@ -1,8 +1,6 @@
 # Tortle - A Wordle Clone
 
-Based on the Ania Kubow project *Wordle Clone in Javascript*.  
+Based on the Web Dev Simplified project *How To Create A 7 Figure Business Idea In One Hour*.  
 
-[Ania's Repo Link](https://github.com/kubowania/wordle-javascript)</br>
-[Video Link](https://youtu.be/mpby4HiElek)
-
-[Tortle Server Repo Link](https://github.com/slandath/tortle-server)
+[Kyle's Repo Link](https://github.com/WebDevSimplified/wordle-clone)</br>
+[Video Link](https://www.youtube.com/watch?v=Wak7iN4JZzU&t=243s)
