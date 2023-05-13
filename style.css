@@ -24,7 +24,7 @@ body {
 .keyboard {
   display: grid;
   grid-template-columns: repeat(20,minmax(1.5em, 2em));
-  grid-auto-rows: 5em;
+  grid-auto-rows: 4em;
   gap: .25em;
   justify-content: center;
 }
@@ -89,7 +89,7 @@ body {
   grid-template-columns: repeat(5, 4em);
   grid-template-rows: repeat(6, 4em);
   gap: .25em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .tile {
