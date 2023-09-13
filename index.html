@@ -1,84 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
     <title>Tortle</title>
 </head>
+
 <body>
-    <div class="title-container"><h1>Tortle</h1></div>
-    <div data-alert-container class="alert-container">
+    <div class="alert-container" id="alertContainer">
+        <p id="alert">Alert!</p>
     </div>
-    <div data-guess-grid class="guess-grid">
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
-        <div class="tile"></div>
+    <div class="answer-container" id="answerContainer">
+        <div class="letter-container" id="LC1">
+            <p class="letter" id="L1"></p>
+        </div>
+        <div class="letter-container" id="LC2">
+            <p class="letter" id="L2"></p>
+        </div>
+        <div class="letter-container" id="LC3">
+            <p class="letter" id="L3"></p>
+        </div>
+        <div class="letter-container" id="LC4">
+            <p class="letter" id="L4"></p>
+        </div>
+        <div class="letter-container" id="LC5">
+            <p class="letter" id="L5"></p>
+        </div>
+        <div class="letter-container" id="LC6">
+            <p class="letter" id="L6"></p>
+        </div>
+        <div class="letter-container" id="LC7">
+            <p class="letter" id="L7"></p>
+        </div>
+        <div class="letter-container" id="LC8">
+            <p class="letter" id="L8"></p>
+        </div>
+        <div class="letter-container" id="LC9">
+            <p class="letter" id="L9"></p>
+        </div>
+        <div class="letter-container" id="LC10">
+            <p class="letter" id="L10"></p>
+        </div>
+        <div class="letter-container" id="LC11">
+            <p class="letter" id="L11"></p>
+        </div>
+        <div class="letter-container" id="LC12">
+            <p class="letter" id="L12"></p>
+        </div>
+        <div class="letter-container" id="LC13">
+            <p class="letter" id="L13"></p>
+        </div>
+        <div class="letter-container" id="LC14">
+            <p class="letter" id="L14"></p>
+        </div>
+        <div class="letter-container" id="LC15">
+            <p class="letter" id="L15"></p>
+        </div>
+        <div class="letter-container" id="LC16">
+            <p class="letter" id="L16"></p>
+        </div>
+        <div class="letter-container" id="LC17">
+            <p class="letter" id="L17"></p>
+        </div>
+        <div class="letter-container" id="LC18">
+            <p class="letter" id="L18"></p>
+        </div>
+        <div class="letter-container" id="LC19">
+            <p class="letter" id="L19"></p>
+        </div>
+        <div class="letter-container" id="LC20">
+            <p class="letter" id="L20"></p>
+        </div>
+        <div class="letter-container" id="LC21">
+            <p class="letter" id="L21"></p>
+        </div>
+        <div class="letter-container" id="LC22">
+            <p class="letter" id="L22"></p>
+        </div>
+        <div class="letter-container" id="LC23">
+            <p class="letter" id="L23"></p>
+        </div>
+        <div class="letter-container" id="LC24">
+            <p class="letter" id="L24"></p>
+        </div>
+        <div class="letter-container" id="LC25">
+            <p class="letter" id="L25"></p>
+        </div>
+        <div class="letter-container" id="LC26">
+            <p class="letter" id="L26"></p>
+        </div>
+        <div class="letter-container" id="LC27">
+            <p class="letter" id="L27"></p>
+        </div>
+        <div class="letter-container" id="LC28">
+            <p class="letter" id="L28"></p>
+        </div>
+        <div class="letter-container" id="LC29">
+            <p class="letter" id="L29"></p>
+        </div>
+        <div class="letter-container" id="LC30">
+            <p class="letter" id="L30"></p>
+        </div>
     </div>
-    <div data-keyboard class="keyboard">
-        <button class="key" data-key="Q">Q</button>
-        <button class="key" data-key="W">W</button>
-        <button class="key" data-key="E">E</button>
-        <button class="key" data-key="R">R</button>
-        <button class="key" data-key="T">T</button>
-        <button class="key" data-key="Y">Y</button>
-        <button class="key" data-key="U">U</button>
-        <button class="key" data-key="I">I</button>
-        <button class="key" data-key="O">O</button>
-        <button class="key" data-key="P">P</button>
-        <div class="space"></div>
-        <button class="key" data-key="A">A</button>
-        <button class="key" data-key="S">S</button>
-        <button class="key" data-key="D">D</button>
-        <button class="key" data-key="F">F</button>
-        <button class="key" data-key="G">G</button>
-        <button class="key" data-key="H">H</button>
-        <button class="key" data-key="J">J</button>
-        <button class="key" data-key="K">K</button>
-        <button class="key" data-key="L">L</button>
-        <div class="space"></div>
-        <button data-enter class="key large">ENTER</button>
-        <button class="key" data-key="Z">Z</button>
-        <button class="key" data-key="X">X</button>
-        <button class="key" data-key="C">C</button>
-        <button class="key" data-key="V">V</button>
-        <button class="key" data-key="B">B</button>
-        <button class="key" data-key="N">N</button>
-        <button class="key" data-key="M">M</button>
-        <button data-delete class="key large">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-              <path fill="var(--color-tone-1)" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
-            </svg>
-          </button>
-    </div>
+
+    <div class="keyboard-container" id="keyboardContainer"></div>
+    <script src="app.js"></script>
 </body>
+
 </html>
